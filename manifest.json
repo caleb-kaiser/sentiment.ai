@@ -1,0 +1,15 @@
+{
+   "name": "Sentiment.ai",
+   "version": "1.0",
+   "description": "Analyze the sentiment of any text with AI.",
+   "permissions": [
+        "tabs",
+        "notifications",
+        "http://*/",
+        "https://*/"
+    ],
+   "browser_action": {
+     "default_popup": "popup.html"
+   },
+   "manifest_version": 2
+ }
