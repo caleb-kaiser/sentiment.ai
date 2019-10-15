@@ -2,6 +2,9 @@
    "name": "Sentiment.ai",
    "version": "1.0",
    "description": "Analyze the sentiment of any text with AI.",
+   "icons": { "48": "48.png",
+           "128": "128.png"
+   },
    "permissions": [
         "tabs",
         "notifications",
