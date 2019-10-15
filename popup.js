@@ -2,7 +2,7 @@ chrome.tabs.executeScript({
     code: "window.getSelection().toString();"
 }, function(selection) {
     let req = new XMLHttpRequest();
-    req.open('POST', 'http://a1a48892be7c911e9b3960a515995724-1930931035.us-west-2.elb.amazonaws.com/sentiment/classifier');
+    req.open('POST', 'http://a6333561aef7a11e983310aca90be4ca-414216537.us-west-2.elb.amazonaws.com/sentiment/classifier');
     req.setRequestHeader('Content-Type', 'application/json');
 
     req.onload = function() {
@@ -10,11 +10,11 @@ chrome.tabs.executeScript({
       let elem = document.getElementById('output');
 
       if (response == 'positive') {
-        elem.cssText = 'color: blue';
+        elem.style.color = 'blue';
       } else if (response == 'negative') {
-        elem.cssText = 'color: red';
+        elem.style.color = 'red';
       } else {
-        elem.cssText = 'color: green';
+        elem.style.color = 'green';
         response = 'unclear'
       }
       elem.innerHTML = response;
@@ -25,6 +25,6 @@ chrome.tabs.executeScript({
           "review": selection[0]
         }
     );
-    
+
     req.send(sendData);
 });
