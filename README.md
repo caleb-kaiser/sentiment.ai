@@ -1,5 +1,5 @@
 # sentiment.ai
-Simple Chrome extension that analyzes the sentiment of any text on the page. Built using Cortex ( https://github.com/cortexlabs/cortex/ ) and Google's BERT.
+Simple Chrome extension that analyzes the sentiment of any text on the page. Built using [Cortex](https://github.com/cortexlabs/cortex/) and Google's BERT.
 
 # The Chrome extension no one asked for
 
@@ -15,7 +15,7 @@ Check it out in action:
 
 # Installation instructions
 
-1. Spin up your own sentiment analysis service using this tutorial. It takes roughly 25 minutes, and you'll be able to say you've built your own machine learning-powered sentiment analyzer.
+1. Spin up your own sentiment analysis service using [this tutorial](https://github.com/cortexlabs/cortex/tree/master/examples/sentiment-analysis). It takes roughly 25 minutes, and you'll be able to say you've built your own machine learning-powered sentiment analyzer.
 
 2. Download this repository.
 
